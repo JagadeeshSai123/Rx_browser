@@ -1,0 +1,8 @@
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\bin\Debug\browser.rxtmg
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\bin\Debug\browser.rxtst
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\bin\Debug\browser.exe.config
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\bin\Debug\browser.exe
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\bin\Debug\browser.pdb
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\obj\x86\Debug\browser.csprojResolveAssemblyReference.cache
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\obj\x86\Debug\browser.exe
+C:\Users\Jagadeesh\Documents\Ranorex\RanorexStudio Projects\browser\browser\obj\x86\Debug\browser.pdb

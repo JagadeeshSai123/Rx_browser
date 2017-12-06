@@ -1,0 +1,252 @@
+﻿<repository
+id="2d6a1435-8a5b-4e97-a9b1-32895e74ad4c"
+name="browserRepository"
+rxversion="7.2">
+	<codegen
+	classname="browserRepository"
+	namespace="browser">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="39bc0771-0242-4ce1-86db-5a5809a84881"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="80d49d37-1555-47f3-9aca-67e91d5d8069"
+		isrooted="True"
+		name="RanorexSeleniumGridGoogleSearch"
+		refpath="/dom[@domain='www.google.co.in' and @caption='Ranorex Selenium Grid - Google Search']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="22e8209b-bcec-4a4e-b2c0-e4405efc72f6"
+			name="GetEdgeToShowUpInSeleniumGridG"
+			refimgid="254c42be-0152-46f8-9159-72da438c7e47"
+			refpath="/dom[@domain='www.google.co.in' and @caption~'^Ranorex\ Selenium\ Grid\ -\ G']//div[#'rso']/div/div/div[1]/div/div/h3/a[@innertext~'^Get\ edge\ to\ show\ up\ in\ Se']"
+			searchtimeout="30000ms">
+				/dom[@caption~'^Ranorex\ Selenium\ Grid\ -\ G']//div[#'rso']/div/div[@innertext='']/div[1]//h3[@innertext='']/a[@innertext~'^Get\ edge\ to\ show\ up\ in\ Se']
+			</item>
+			<basepath>
+				/dom[@caption~'^Ranorex\ Selenium\ Grid\ -\ G']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ada89489-3364-4ccf-bde5-08eba1b8c649"
+		isrooted="True"
+		name="Dashboard"
+		refpath="/dom[@domain='www.browserstack.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="9797e2fb-fc49-454a-b763-9e89aae1072d"
+			name="DockStopTesting"
+			refimgid="e356ae12-88ff-40b8-ad4b-72845925f6e4"
+			refpath="/dom[@domain='www.browserstack.com']//a[#'dockStopTesting']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.browserstack.com']//a[#'dockStopTesting']
+			</item>
+			<basepath>
+				/dom[@domain='www.browserstack.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="unknown,mobileapp,androidapp"
+		capname="mobileapp"
+		id="daf2e90f-32fb-4e73-adda-bc0699f45813"
+		isrooted="True"
+		name="ComMygamesolutionsUs"
+		refpath="/mobileapp[@title='com.mygamesolutions.us']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,divtag,webelement,mobileuielement"
+			capname="divtag"
+			id="8ee6b1b4-c19b-4da5-8cd1-8d083b44de13"
+			name="StartExploring"
+			refimgid="8c8818d2-9986-43d5-9580-9b7d635a6a30"
+			refpath="/mobileapp[@title='com.mygamesolutions.us']/form[@title='MainActivity']/container[@rid='content']/dom[@domain='mgsi-tst.outsystemsenterprise.com']//div[#'b1-Content']/div[1]/div[2]/div[@innertext='Start Exploring...']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='com.mygamesolutions.us']/form[@title='MainActivity']/?/?/dom[@domain='mgsi-tst.outsystemsenterprise.com']//div[#'b1-Content']//div[@innertext='Start Exploring...']
+			</item>
+			<item
+			addcaps="form,mobileform,mobileuielement"
+			capname="form"
+			id="4993cf87-9ef0-4199-8b3a-6b53b5f7dc44"
+			name="MainActivity"
+			refpath="/mobileapp[@title='com.mygamesolutions.us']/form[@title='MainActivity']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='com.mygamesolutions.us']/form[@title='MainActivity']
+			</item>
+			<item
+			addcaps="unknown,inputtag,webelement,mobileuielement"
+			capname="inputtag"
+			id="9e95d0cf-0d51-4744-ae1d-170557a65a79"
+			name="InputUsernameVal"
+			refimgid="211f0371-23f9-445d-9359-6e76031f2b41"
+			searchtimeout="30000ms">
+				/mobileapp[@title='com.mygamesolutions.us']//dom[@domain='mgsi-tst.outsystemsenterprise.com']//input[@id='Input_UsernameVal' and @class='form-control OSFillParent' and @tagname='input']
+			</item>
+			<item
+			addcaps="unknown,inputtag,webelement,mobileuielement"
+			capname="inputtag"
+			id="e1a2af02-6566-4a9b-b6c8-feec504582f7"
+			name="InputPasswordVal"
+			refimgid="14798f91-e36f-4b8f-9965-56dbc1b700f9"
+			searchtimeout="30000ms">
+				/mobileapp[@title='com.mygamesolutions.us']//dom[@domain='mgsi-tst.outsystemsenterprise.com']//input[@type='password' and @class='form-control login-password OSFillParent ' and @tagname='input']
+			</item>
+			<item
+			addcaps="unknown,inputtag,webelement,mobileuielement"
+			capname="inputtag"
+			id="4e9aec96-2c39-499c-a6bd-4e50786c1087"
+			name="InputPasswordVal1"
+			refimgid="4aac0dec-1783-4e3e-9cd8-8dd6bafb016e"
+			searchtimeout="30000ms">
+				/mobileapp[@title='com.mygamesolutions.us']//dom[@domain='mgsi-tst.outsystemsenterprise.com']//input[@type='password' and @id='Input_PasswordVal' and @class='form-control login-password OSFillParent' and @tagname='input']
+			</item>
+			<item
+			addcaps="unknown,spantag,webelement,mobileuielement"
+			capname="spantag"
+			id="d7bcc1cb-ef57-4723-ab50-f569e2bf1ce4"
+			name="LogIn"
+			refimgid="81b9b3df-1c16-4201-944e-beace5947771"
+			refpath="/mobileapp[@title='com.mygamesolutions.us']/form[@title='MainActivity']/container[@rid='content']/dom[@domain='mgsi-tst.outsystemsenterprise.com']//div[#'b1-Content']/div[@innertext='']/div[4]/button[@innertext='']/span[@innertext='Log in']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='com.mygamesolutions.us']/form[@title='MainActivity']/?/?/dom[@domain='mgsi-tst.outsystemsenterprise.com']//div[#'b1-Content']//span[@innertext='Log in']
+			</item>
+			<basepath>
+				/mobileapp[@title='com.mygamesolutions.us']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAATUlEQVQ4T2OgOggN
+DVkPxP/x4PVQpZgAKCmAphgrhirHBEBJsAFQLlZASJ6gglEDRo4BhDBUKXaASyEucQwAVNCArBgL
+boAqpQZgYAAAHKF3yxO/LAEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="7968915b-dfd9-4eca-9810-9227b16036df"
+		isrooted="True"
+		name="Google"
+		refpath="/dom[@domain='www.google.co.in' and @caption='Google']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="7f683ed0-c224-43e9-92a1-e4510c436cd9"
+			name="LstIb"
+			refimgid="0f9d1fea-de53-4f2e-9b7d-5d1caaea9a67"
+			refpath="/dom[@domain='www.google.co.in' and @caption='Google']//input[#'lst-ib']"
+			searchtimeout="30000ms">
+				/dom[@caption='Google']//input[#'lst-ib']
+			</item>
+			<basepath>
+				/dom[@caption='Google']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="f81abb72-6e38-4c7f-9902-d0d95a3e7de8"
+		isrooted="True"
+		name="Mdi1Mdi"
+		refpath="/form[@title='Mdi1 - Mdi' and @processname='Mdi' and @class='Afx:00350000:8:00010003:00000000:006A08C3']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="c2937806-38f5-47eb-ac73-e058af35ea00"
+			name="Window"
+			refimgid="e90b49dc-9ee7-4533-b083-b9790dc70b1b"
+			refpath="/form[@title='Mdi1 - Mdi' and @processname='Mdi' and @class='Afx:00350000:8:00010003:00000000:006A08C3']/element[@controlid='59419' and @class='Afx:DockPane:350000:8:10003:10' and @instance='0']/element/container/menuitem[@accessiblename='Window']"
+			searchtimeout="30000ms">
+				/form[@processname='Mdi' and @class='Afx:00350000:8:00010003:00000000:006A08C3']//container[@accessiblename='Menu Bar']/menuitem[@accessiblename='Window']
+			</item>
+			<basepath>
+				/form[@processname='Mdi' and @class='Afx:00350000:8:00010003:00000000:006A08C3']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAMtSURBVDhPjZF9UNMFGMd/d11/aCWgctoU0pro
+dWkvHMWCMGQZHemISALH22IcWMCOwgBfgNg6jg1u6u1kQHLgETIoiATuyAlCbP7ShtJppog7tOFL
+Qc6XwqBPlvuv/dHnz+c+3+9z9zyCN+52V+z9rSaX67sScGW9zkRSBM63ZNPO2PBDrsy4CI/mnbnL
+1pnZC9/wh72FqWoV17Yr+FkVyQ19ES6jDsfbr2k9qnfmBiu5aUrhF8N73O4wMd2gY7pRz7hGxQl5
+CAPPrSjxqN6h81Nmf3XhTJRxSR3H6Buv4NIVM/LqswyuC+SwdLH3AsvJTB/TUGzRn/s08BeMJW3k
+H2wRL3Dx/nZb8JP0rV5K+/JH/1sgTphyes4W8dn3Sm5Xfcy9Sz/BvRnunDnFwIYQzmUrObY2gK4V
+frT6Crs8sQdM3rW1X3EPc+56J10XdjARJsXd/QVnUmKZHrTSK1vHDxkJWIP8aV38EOm+j9Utj6+a
+54kLwumrDSc6HPl8bsulzfEJwzkKhpQK+ldJOC6X0SOZh321P9VL5rNGFs/TBRbCtF8Tqe91J9f1
+VwiDY9VijVXJ2KSI89ppHONWso0KyowxGPPiaNscQ31pGeWWYWLMQ0Sbj5HQ8C3ar0bIrT16Vuhy
+7BS1lmh+n3GjbVTyfmU0201bSCp/Ck1rJSWnbpLYNkpawzDptVb2D53H0DNKWFE7UlW9KBzozxDT
+qoL+vbj4Yy/xBcFUNKejKAhAbS6l+Mg4M7NzXJm6Q/hHB9F1OlBU9rAq8wBLE/aJQmFT8MnYnRKm
+bk0iS1vIetUySuqTkWc/TqKhGPvlW+S3HGetpomQD5tR1xxFvvtLApNr8NukF4W82ufrtuyWkqWP
+IlK9jMjMQNS6KF5OXcRLWWk39tucGLpHCMpvQbqtkVRjH+sLLSyJ38v8DeXfeX4hCJt2BK2Ub1v5
+wYtJkr6IjIAjMqXfMxvNjsI1eQdptV9EPH+VzWUdvFtxmFBNM74xeh6WFQ544t6RG+3hoWWdh55I
+NbklKWYWxe0hNKcJ//vbH4nSlXq0/8fCrXsWLIg2bPV5s0rn947Z58FUEP4Gg5nfI5pwa7EAAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

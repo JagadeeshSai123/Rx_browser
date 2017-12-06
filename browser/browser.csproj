@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DFB29F35-8325-443F-80FC-68456FD14E67}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>browser</RootNamespace>
+    <AssemblyName>browser</AssemblyName>
+    <RanorexVersion>7.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>53b224fe-78d9-4300-96a7-9b5d14221cf6</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>f58f8fc9-57ea-4d18-9d6a-ef9a1f369be7</id>
+    </Compile>
+    <Compile Include="browserRepository.cs">
+      <BoundTo>53b224fe-78d9-4300-96a7-9b5d14221cf6</BoundTo>
+      <DependentUpon>browserRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>a41e7e5e-05de-411c-9466-48fbd4e002c0</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>051f27f8-82a6-4754-82f5-398942d057f5</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>6ea4d20d-8320-41e0-a327-6bde299cf153</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4b165b55-d802-4106-afde-34a03d95a0ca</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>6ea4d20d-8320-41e0-a327-6bde299cf153</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64b4521a-4e34-4b3f-b724-d81720d9807c</id>
+    </Compile>
+    <Compile Include="Recording2.cs">
+      <BoundTo>534945e1-4d2a-4bb3-a6b9-76cf62b77ed1</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>963882dc-e8a2-446f-adc6-ba3c5276a08f</id>
+    </Compile>
+    <Compile Include="Recording2.UserCode.cs">
+      <BoundTo>534945e1-4d2a-4bb3-a6b9-76cf62b77ed1</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9189e44-9d1f-4c55-9ef8-022573d41ac4</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>2b3c2356-9cc2-4e45-9346-692d32c25406</id>
+    </None>
+    <None Include="browserRepository.rximg">
+      <BoundTo>53b224fe-78d9-4300-96a7-9b5d14221cf6</BoundTo>
+      <DependentUpon>browserRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>bb817c34-5887-4444-94d8-59e6b5d86ba1</id>
+    </None>
+    <None Include="browserRepository.rxrep">
+      <id>53b224fe-78d9-4300-96a7-9b5d14221cf6</id>
+      <repoid>2d6a1435-8a5b-4e97-a9b1-32895e74ad4c</repoid>
+      <reporootid>39bc0771-0242-4ce1-86db-5a5809a84881</reporootid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>53b224fe-78d9-4300-96a7-9b5d14221cf6</BoundTo>
+      <id>6ea4d20d-8320-41e0-a327-6bde299cf153</id>
+      <recordtableid>0fb6b177-b373-4005-813a-10338fe0e3a6</recordtableid>
+    </None>
+    <None Include="Recording2.rxrec">
+      <BoundTo>53b224fe-78d9-4300-96a7-9b5d14221cf6</BoundTo>
+      <id>534945e1-4d2a-4bb3-a6b9-76cf62b77ed1</id>
+      <recordtableid>15ef3081-9993-44af-8590-2776cd1ca8d1</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="browser.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0d92f6df-3f3a-4b2f-947f-c2653c7a8f84</id>
+    </Content>
+    <Content Include="browser.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e412631e-037f-423a-a856-0f0493fc1b03</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{A4F14F63-AD20-4F28-B41D-A74B187FCF58}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

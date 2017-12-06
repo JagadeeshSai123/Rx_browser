@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 7.2
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B109BCA2-4BF5-4FF9-8DBC-4FA1D44E531D}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "browser", "browser\browser.csproj", "{DFB29F35-8325-443F-80FC-68456FD14E67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranorex Automation Helpers", "RanorexAutomationHelpers\Ranorex Automation Helpers.csproj", "{A4F14F63-AD20-4F28-B41D-A74B187FCF58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFB29F35-8325-443F-80FC-68456FD14E67}.Debug|x86.Build.0 = Debug|x86
+		{DFB29F35-8325-443F-80FC-68456FD14E67}.Debug|x86.ActiveCfg = Debug|x86
+		{DFB29F35-8325-443F-80FC-68456FD14E67}.Release|x86.Build.0 = Release|x86
+		{DFB29F35-8325-443F-80FC-68456FD14E67}.Release|x86.ActiveCfg = Release|x86
+		{A4F14F63-AD20-4F28-B41D-A74B187FCF58}.Debug|x86.Build.0 = Debug|x86
+		{A4F14F63-AD20-4F28-B41D-A74B187FCF58}.Debug|x86.ActiveCfg = Debug|x86
+		{A4F14F63-AD20-4F28-B41D-A74B187FCF58}.Release|x86.Build.0 = Release|x86
+		{A4F14F63-AD20-4F28-B41D-A74B187FCF58}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="15ef3081-9993-44af-8590-2776cd1ca8d1"
+mode="Desktop"
+rxversion="7.2">
+	<name>
+		Recording2
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording2"
+	namespace="browser">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="2d6a1435-8a5b-4e97-a9b1-32895e74ad4c"
+	name="browserRepository"
+	relativepath="browserRepository.rxrep"
+	rxversion="7.2">
+		<codegen
+		classname="browserRepository"
+		namespace="browser">
+		</codegen>
+		<rootfolder
+		id="39bc0771-0242-4ce1-86db-5a5809a84881"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

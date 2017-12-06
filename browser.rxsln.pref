@@ -1,0 +1,14 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{DFB29F35-8325-443F-80FC-68456FD14E67}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>{A4F14F63-AD20-4F28-B41D-A74B187FCF58}</string>
+      <string>Modules</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution browser[browser[]Ranorex Automation Helpers[]]]&#xD;&#xA;Solution browser\browser\browserRepository.rxrep&#xD;&#xA;Solution browser\browser\Reports" />
+  <StartupProject value="{DFB29F35-8325-443F-80FC-68456FD14E67}" />
+</Properties>
