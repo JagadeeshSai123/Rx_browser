@@ -9,6 +9,6 @@
       <string>Modules</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution browser[browser[]Ranorex Automation Helpers[]]]&#xD;&#xA;Solution browser\browser\browserRepository.rxrep&#xD;&#xA;Solution browser\browser\Reports" />
+  <ProjectBrowserState value="[Solution browser[browser[]Ranorex Automation Helpers[]]]&#xD;&#xA;Solution browser\browser\browser.rxtst&#xD;&#xA;Solution browser\browser\AssemblyInfo.cs" />
   <StartupProject value="{DFB29F35-8325-443F-80FC-68456FD14E67}" />
 </Properties>

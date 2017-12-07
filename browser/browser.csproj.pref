@@ -1,6 +1,6 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="browserRepository.rxrep" />
+    <Element value="browser.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
