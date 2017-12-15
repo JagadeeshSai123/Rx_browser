@@ -1,4 +1,4 @@
-﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html"
               indent="no"
               encoding="utf-8"
@@ -316,12 +316,12 @@
     <xsl:variable name="activityclassname" select="concat(@type, ' ', @testentry-activity-type, ' ',@iteration-exectype, ' ', @activity-exectype)"/>
 
     <li class="{@result} ui-treeList-item {$activityclassname}" id="container{@rid}">
-      <xsl:variable name="success" select="@totalsuccesscount" />
-      <xsl:variable name="failed" select="@totalfailedcount" />
-      <xsl:variable name="ignored" select="@totalblockedcount" />
+      <xsl:variable name="success" select="@childsuccesscount" />
+      <xsl:variable name="failed" select="@childfailedcount" />
+      <xsl:variable name="ignored" select="@childblockedcount" />
       <xsl:variable name="max" select="$success + $failed + $ignored" />
 
-      
+
       <h2 class="{@result}" onclick="OnLoadContentDynamic('{@rid}','container',this);" onMouseOver="DisplayHoverMenu(this);" onMouseOut="HideHoverMenu(this)">
         <!--JUMP TO-->
         <xsl:if test="./@testcontainerid">
@@ -364,7 +364,7 @@
         <xsl:if test=".//item[@level='Warn']">
           <span class="ui-module-icon warn ui-treeList-toggle-child" />
         </xsl:if>
-        <xsl:if test=".//item[@level='Error']">
+        <xsl:if test=".//item[@level='Error' or @level='Failure']">
           <span class="ui-module-icon error ui-treeList-toggle-child" />
         </xsl:if>
 
@@ -389,6 +389,14 @@
           <strong class="iterationinfo {$activityclassname} ui-treeList-toggle-child">
             <xsl:value-of select ="concat(@dataiterationcount, @iterationCount, @iteration)"/>
           </strong>
+        </xsl:if>
+
+        <!--RETRY INFO TEXT-->
+        <xsl:if test="@retry">
+           <span>
+               <span class="ui-module-icon retry ui-treeList-toggle-child" />
+               <span class="retryLabel"><xsl:value-of select="@retry"/></span>
+           </span>
         </xsl:if>
 
         <xsl:call-template name="ActivityDescription" />
@@ -474,6 +482,7 @@
     </td>
   </xsl:template>
 
+  <!-- SETUP and TEARDOWN TEMPLATE-->
   <xsl:template match="activity[@type='setup-container' or @type='teardown-container']">
     <xsl:param name="itemCount" />
     <li class="{@result} setup-teardown" id="container{@rid}">
@@ -484,7 +493,7 @@
         <xsl:if test=".//item[@level='Warn']">
           <span class="ui-module-icon warn"></span>
         </xsl:if>
-        <xsl:if test=".//item[@level='Error']">
+        <xsl:if test=".//item[@level='Error' or @level='Failure']">
           <span class="ui-module-icon error"></span>
         </xsl:if>
         <span class="duration">
@@ -502,6 +511,7 @@
     </li>
   </xsl:template>
 
+  <!-- TEST MODULE TEMPLATE -->
   <xsl:template match="activity[@type='test-module']">
     <xsl:param name="itemCount" />
     <li>
@@ -514,7 +524,7 @@
           <xsl:if test=".//item[@level='Warn']">
             <span class="ui-module-icon warn"></span>
           </xsl:if>
-          <xsl:if test=".//item[@level='Error']">
+          <xsl:if test=".//item[@level='Error' or @level='Failure']">
             <span class="ui-module-icon error"></span>
           </xsl:if>
           <i>
@@ -584,7 +594,7 @@
         <xsl:if test=".//item[@level='Warn']">
           <span class="ui-module-icon warn"></span>
         </xsl:if>
-        <xsl:if test=".//item[@level='Error']">
+        <xsl:if test=".//item[@level='Error' or @level='Failure']">
           <span class="ui-module-icon error"></span>
         </xsl:if>
         <xsl:call-template name="ActivityDescription" />
@@ -635,7 +645,7 @@
         <xsl:if test=".//item[@level='Warn']">
           <span class="ui-module-icon warn"></span>
         </xsl:if>
-        <xsl:if test=".//item[@level='Error']">
+        <xsl:if test=".//item[@level='Error' or @level='Failure']">
           <span class="ui-module-icon error"></span>
         </xsl:if>
         <xsl:call-template name="ActivityDescription" />
@@ -701,6 +711,12 @@
                   <a href="#" class="jump-to">
                     <xsl:copy-of select="./metainfo" /> <span class="ui-icon"></span>Jump to item
                   </a>
+                  <xsl:if test="@errimg and ./metainfo/@replaceImage='true'">
+                    <a href="#" class="replace-reference-img">
+                      <metainfo codefile="{./metainfo/@codefile}" itemindex="{./metainfo/@itemindex}" img="{@errimg}"/> 
+                      <span class="ui-icon"></span>Replace expected image
+                    </a>
+                  </xsl:if>
                 </xsl:if>
                 <xsl:if test="./metainfo/@path">
                   <a href="#" class="spy">
@@ -820,20 +836,23 @@
     <div class="execution-information">
       <table>
         <tr>
+		   <td>
+            <i class="field">
+              Computer/Endpoint
+			  <b>			  
+				<xsl:call-template name="break">
+					<xsl:with-param name="text" select="@host" />
+				</xsl:call-template>
+              </b>
+            </i>
+          </td>
           <td>
             <i class="field">
               Execution time <b>
                 <xsl:value-of select="@timestamp" />
               </b>
             </i>
-          </td>
-          <td>
-            <i class="field">
-              Computer/Endpoint <b>
-                <xsl:value-of select="@host" />
-              </b>
-            </i>
-          </td>
+          </td>       
         </tr>
         <tr>
           <td>
@@ -933,9 +952,9 @@
 
     <i class="description">
       <xsl:if test="string-length(normalize-space(./conditionmsg)) > 0">
-        <xsl:value-of select="./conditionmsg"/>        
+        <xsl:value-of select="./conditionmsg"/>
       </xsl:if>
-      
+
       <xsl:value-of select="substring($detailstext,0,70)" />
       <xsl:if test="string-length($detailstext) &gt; 70">...</xsl:if>
     </i>
@@ -969,4 +988,23 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  
+  <xsl:template name="break">
+  <xsl:param name="text" select="string(.)"/>
+  <xsl:choose>
+    <xsl:when test="contains($text, '&#xa;')">
+      <xsl:value-of select="substring-before($text, '&#xa;')"/>
+      <br/>
+      <xsl:call-template name="break">
+        <xsl:with-param 
+          name="text" 
+          select="substring-after($text, '&#xa;')"
+        />
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$text"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
 </xsl:stylesheet>

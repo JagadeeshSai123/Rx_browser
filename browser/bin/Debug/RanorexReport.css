@@ -250,6 +250,11 @@ tr.Success {
     background-position: -196px -1px;
 }
 
+.ui-module-icon.retry {
+    background-position: -555px 0px;
+    margin-left: 4px;
+}
+
 .ui-module-icon.error, .ui-icon.error, .ui-module-icon.Error, .ui-icon.Error {
     background-position: -80px -1px;
 }
@@ -405,6 +410,14 @@ tr.Success {
     color: #999;
     font-weight: 400;
     margin-top: 2px;
+}
+
+.retryLabel {
+    font-size: 11px;    
+    color: #999;
+    font-weight: 400;    
+    margin-left: -2px;
+    margin-right: 8px;
 }
 
 /* define font sizes for headers of individual folders */
@@ -930,6 +943,11 @@ tr.active td.messageCell {
 
 .controls-container a.help span.ui-icon {
     background-position: -214px 0;
+    cursor: pointer;
+}
+
+.controls-container a.replace-reference-img span.ui-icon {
+    background-position: -555px 0;
     cursor: pointer;
 }
 

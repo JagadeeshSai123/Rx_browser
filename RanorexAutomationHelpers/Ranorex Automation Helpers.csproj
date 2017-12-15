@@ -69,17 +69,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <id>17c5a233-1a33-42f9-8971-29405b157424</id>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\EmailModule.cs" />
-    <Compile Include="Modules\ReportToPDFModule.cs" />
-    <Compile Include="UserCodeCollections\EmailLibrary.cs" />
-    <Compile Include="UserCodeCollections\FileLibrary.cs" />
-    <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs" />
-    <Compile Include="UserCodeCollections\StringLibrary.cs" />
-    <Compile Include="UserCodeCollections\SystemLibrary.cs" />
-    <Compile Include="UserCodeCollections\ValidationLibrary.cs" />
+    <Compile Include="Modules\EmailModule.cs">
+      <id>a8d67e0b-02cd-492e-98df-224ef64f30f4</id>
+    </Compile>
+    <Compile Include="Modules\ReportToPDFModule.cs">
+      <id>626b004a-ca87-47fb-868c-cb1876092d1a</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\EmailLibrary.cs">
+      <id>afdf0947-c91e-4ee7-8665-472f823c3b67</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\FileLibrary.cs">
+      <id>1df9f365-8b97-4c55-b453-340df4ed37b7</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
+      <id>f5d347e8-1bfe-4675-a71d-f8b8e21af528</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\StringLibrary.cs">
+      <id>399525b3-f153-4cb7-88bb-fe37405770e2</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\SystemLibrary.cs">
+      <id>f7652d44-6674-4af3-a84f-b031f22b7473</id>
+    </Compile>
+    <Compile Include="UserCodeCollections\ValidationLibrary.cs">
+      <id>42f16b4c-581e-4cae-8e5b-3783c8dd300d</id>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

@@ -32,6 +32,7 @@ namespace browser
         browserRepositoryFolders.ComMygamesolutionsUsAppFolder _commygamesolutionsus;
         browserRepositoryFolders.GoogleAppFolder _google;
         browserRepositoryFolders.Mdi1MdiAppFolder _mdi1mdi;
+        browserRepositoryFolders.BrowserAppFolder _browser;
 
         /// <summary>
         /// Gets the singleton class instance representing the browserRepository element repository.
@@ -53,6 +54,7 @@ namespace browser
             _commygamesolutionsus = new browserRepositoryFolders.ComMygamesolutionsUsAppFolder(this);
             _google = new browserRepositoryFolders.GoogleAppFolder(this);
             _mdi1mdi = new browserRepositoryFolders.Mdi1MdiAppFolder(this);
+            _browser = new browserRepositoryFolders.BrowserAppFolder(this);
         }
 
 #region Variables
@@ -114,6 +116,15 @@ namespace browser
         public virtual browserRepositoryFolders.Mdi1MdiAppFolder Mdi1Mdi
         {
             get { return _mdi1mdi; }
+        }
+
+        /// <summary>
+        /// The Browser folder.
+        /// </summary>
+        [RepositoryFolder("9e9fa911-f121-4e34-8e3c-e9b97fed3210")]
+        public virtual browserRepositoryFolders.BrowserAppFolder Browser
+        {
+            get { return _browser; }
         }
     }
 
@@ -579,6 +590,227 @@ namespace browser
                 get
                 {
                     return _windowInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BrowserAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9e9fa911-f121-4e34-8e3c-e9b97fed3210")]
+        public partial class BrowserAppFolder : RepoGenBaseFolder
+        {
+            browserRepositoryFolders.DomAppFolder _dom;
+            RepoItemInfo _rxbrowseractivityInfo;
+            RepoItemInfo _btnbackInfo;
+
+            /// <summary>
+            /// Creates a new Browser  folder.
+            /// </summary>
+            public BrowserAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Browser", "/mobileapp[@title='ranorex.RxBrowser']", parentFolder, 30000, null, false, "9e9fa911-f121-4e34-8e3c-e9b97fed3210", "")
+            {
+                _dom = new browserRepositoryFolders.DomAppFolder(this);
+                _rxbrowseractivityInfo = new RepoItemInfo(this, "RxBrowserActivity", "form[@title='RxBrowserActivity']", 30000, null, "13516be9-36b8-4c3d-842a-546a0f5ae415");
+                _btnbackInfo = new RepoItemInfo(this, "BtnBack", "form[@title='RxBrowserActivity']//container[@rid='Navigation']/button[@accessibilityid='Back']", 30000, null, "e7cdee1d-3a62-45be-ba97-3ced3a09f114");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9e9fa911-f121-4e34-8e3c-e9b97fed3210")]
+            public virtual Ranorex.MobileApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MobileApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9e9fa911-f121-4e34-8e3c-e9b97fed3210")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RxBrowserActivity item.
+            /// </summary>
+            [RepositoryItem("13516be9-36b8-4c3d-842a-546a0f5ae415")]
+            public virtual Ranorex.Form RxBrowserActivity
+            {
+                get
+                {
+                    return _rxbrowseractivityInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RxBrowserActivity item info.
+            /// </summary>
+            [RepositoryItemInfo("13516be9-36b8-4c3d-842a-546a0f5ae415")]
+            public virtual RepoItemInfo RxBrowserActivityInfo
+            {
+                get
+                {
+                    return _rxbrowseractivityInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnBack item.
+            /// </summary>
+            [RepositoryItem("e7cdee1d-3a62-45be-ba97-3ced3a09f114")]
+            public virtual Ranorex.Button BtnBack
+            {
+                get
+                {
+                    return _btnbackInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnBack item info.
+            /// </summary>
+            [RepositoryItemInfo("e7cdee1d-3a62-45be-ba97-3ced3a09f114")]
+            public virtual RepoItemInfo BtnBackInfo
+            {
+                get
+                {
+                    return _btnbackInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Dom folder.
+            /// </summary>
+            [RepositoryFolder("6c75ca40-87c8-4cc2-99e0-811b0ad2a211")]
+            public virtual browserRepositoryFolders.DomAppFolder Dom
+            {
+                get { return _dom; }
+            }
+        }
+
+        /// <summary>
+        /// The DomAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6c75ca40-87c8-4cc2-99e0-811b0ad2a211")]
+        public partial class DomAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _lstibInfo;
+            RepoItemInfo _enterprisesdefineenterprisesatdictInfo;
+            RepoItemInfo _sbicoInfo;
+
+            /// <summary>
+            /// Creates a new Dom  folder.
+            /// </summary>
+            public DomAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Dom", ".//dom", parentFolder, 30000, null, false, "6c75ca40-87c8-4cc2-99e0-811b0ad2a211", "")
+            {
+                _lstibInfo = new RepoItemInfo(this, "LstIb", ".//input[#'lst-ib']", 30000, null, "06e2235e-b763-4944-ba8f-f1f2f95b7aba");
+                _enterprisesdefineenterprisesatdictInfo = new RepoItemInfo(this, "EnterprisesDefineEnterprisesAtDict", ".//div[#'rso']/div[1]/div[@innertext='']/div[@innertext='']/div[@innertext='']/div[1]/?/?/a[@innertext='']/div[@innertext~'^Enterprises\\ \\|\\ Define\\ Ente']", 30000, null, "44ad4d54-11e1-4505-b952-be88da1818ea");
+                _sbicoInfo = new RepoItemInfo(this, "Sbico", ".//button[#'tsbb']/div[@innertext='']", 30000, null, "eea0176a-d2b0-449c-ab03-5477a9e49048");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6c75ca40-87c8-4cc2-99e0-811b0ad2a211")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6c75ca40-87c8-4cc2-99e0-811b0ad2a211")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LstIb item.
+            /// </summary>
+            [RepositoryItem("06e2235e-b763-4944-ba8f-f1f2f95b7aba")]
+            public virtual Ranorex.InputTag LstIb
+            {
+                get
+                {
+                    return _lstibInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LstIb item info.
+            /// </summary>
+            [RepositoryItemInfo("06e2235e-b763-4944-ba8f-f1f2f95b7aba")]
+            public virtual RepoItemInfo LstIbInfo
+            {
+                get
+                {
+                    return _lstibInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterprisesDefineEnterprisesAtDict item.
+            /// </summary>
+            [RepositoryItem("44ad4d54-11e1-4505-b952-be88da1818ea")]
+            public virtual Ranorex.DivTag EnterprisesDefineEnterprisesAtDict
+            {
+                get
+                {
+                    return _enterprisesdefineenterprisesatdictInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterprisesDefineEnterprisesAtDict item info.
+            /// </summary>
+            [RepositoryItemInfo("44ad4d54-11e1-4505-b952-be88da1818ea")]
+            public virtual RepoItemInfo EnterprisesDefineEnterprisesAtDictInfo
+            {
+                get
+                {
+                    return _enterprisesdefineenterprisesatdictInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Sbico item.
+            /// </summary>
+            [RepositoryItem("eea0176a-d2b0-449c-ab03-5477a9e49048")]
+            public virtual Ranorex.DivTag Sbico
+            {
+                get
+                {
+                    return _sbicoInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Sbico item info.
+            /// </summary>
+            [RepositoryItemInfo("eea0176a-d2b0-449c-ab03-5477a9e49048")]
+            public virtual RepoItemInfo SbicoInfo
+            {
+                get
+                {
+                    return _sbicoInfo;
                 }
             }
         }

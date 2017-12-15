@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="7.1">
+rxversion="7.2">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -418,7 +418,7 @@ rxversion="7.1">
 		&lt;![CDATA[{
   &quot;webdriver.remote&quot;: [
     {
-      &quot;Id&quot;: &quot;5a369b34-c943-42ab-a452-31e4bcf337b2&quot;,
+      &quot;Id&quot;: &quot;49a23c70-b01f-48bb-a2e3-5254a3c6c24d&quot;,
       &quot;ControlFlags&quot;: 0,
       &quot;CoreData&quot;: {},
       &quot;PluginData&quot;: {
@@ -431,7 +431,7 @@ rxversion="7.1">
       &quot;Tags&quot;: []
     },
     {
-      &quot;Id&quot;: &quot;c864e9fa-8abc-41ba-950b-38fd1cd0b50f&quot;,
+      &quot;Id&quot;: &quot;940a7bf6-8349-4dd2-a469-28512cd9d2be&quot;,
       &quot;ControlFlags&quot;: 0,
       &quot;CoreData&quot;: {},
       &quot;PluginData&quot;: {
@@ -445,7 +445,7 @@ rxversion="7.1">
       &quot;Tags&quot;: []
     },
     {
-      &quot;Id&quot;: &quot;f5cc8ffe-19c2-423e-9f2c-12d5f95a4028&quot;,
+      &quot;Id&quot;: &quot;a2c63b2c-f59e-4ce7-a6b8-d437850bd80f&quot;,
       &quot;ControlFlags&quot;: 0,
       &quot;CoreData&quot;: {},
       &quot;PluginData&quot;: {
@@ -458,7 +458,7 @@ rxversion="7.1">
       &quot;Tags&quot;: []
     },
     {
-      &quot;Id&quot;: &quot;ae62e21c-e52b-4d65-994d-85f104f7ae26&quot;,
+      &quot;Id&quot;: &quot;e3464a5f-d829-4919-b1a5-e849548b551d&quot;,
       &quot;ControlFlags&quot;: 0,
       &quot;CoreData&quot;: {},
       &quot;PluginData&quot;: {
@@ -474,7 +474,7 @@ rxversion="7.1">
   ],
   &quot;mobile.android.remote&quot;: [
     {
-      &quot;Id&quot;: &quot;8e670494-4392-4e74-b6a3-fea9ec5b785e&quot;,
+      &quot;Id&quot;: &quot;8badf47f-8ac8-4575-b848-609a8d9fe0f9&quot;,
       &quot;ControlFlags&quot;: 0,
       &quot;CoreData&quot;: {},
       &quot;PluginData&quot;: {
@@ -486,10 +486,36 @@ rxversion="7.1">
       &quot;DisplayName&quot;: &quot;USB-3300c2d493d1a25d&quot;,
       &quot;Url&quot;: &quot;3300c2d493d1a25d&quot;,
       &quot;Tags&quot;: []
+    },
+    {
+      &quot;Id&quot;: &quot;862bd159-64fc-42d0-b744-f230ef6c8931&quot;,
+      &quot;ControlFlags&quot;: 0,
+      &quot;CoreData&quot;: {},
+      &quot;PluginData&quot;: {
+        &quot;Platform&quot;: &quot;Android&quot;,
+        &quot;ConnectionType&quot;: &quot;USB&quot;
+      },
+      &quot;MetaData&quot;: {},
+      &quot;Description&quot;: &quot;&quot;,
+      &quot;DisplayName&quot;: &quot;USB-47f9c2e3&quot;,
+      &quot;Url&quot;: &quot;47f9c2e3&quot;,
+      &quot;Tags&quot;: []
     }
   ]
 }]]&gt;
 	</Endpoints.Data>
+	<TestCase.Retry.Count>
+		0
+	</TestCase.Retry.Count>
+	<TestCase.Retry.IncludeSmartFolder>
+		True
+	</TestCase.Retry.IncludeSmartFolder>
+	<TestCase.Retry.IncludeTestCase>
+		True
+	</TestCase.Retry.IncludeTestCase>
+	<TestCase.Retry.ShowWarning>
+		True
+	</TestCase.Retry.ShowWarning>
 	<plugins.win32.EnableBasicDelphiSupport>
 		True
 	</plugins.win32.EnableBasicDelphiSupport>
@@ -594,13 +620,13 @@ rxversion="7.1">
 		True
 	</plugins.qt.quickfiltered>
 	<plugin.mobile.android.ConnectTimout>
-		30000ms
+		60000ms
 	</plugin.mobile.android.ConnectTimout>
 	<plugin.mobile.android.rpccalltimeout>
-		30000ms
+		60000ms
 	</plugin.mobile.android.rpccalltimeout>
 	<plugin.mobile.DiscoveryTimeout>
-		15000ms
+		60000ms
 	</plugin.mobile.DiscoveryTimeout>
 	<plugin.mobile.deploytimeout>
 		60000ms
@@ -612,7 +638,7 @@ rxversion="7.1">
 		60000ms
 	</plugin.mobile.usbdiscoverytimeout>
 	<plugin.mobile.generaltooltimeout>
-		30000ms
+		60000ms
 	</plugin.mobile.generaltooltimeout>
 	<plugin.mobile.ios.maxcollectionviewvcellcount>
 		50

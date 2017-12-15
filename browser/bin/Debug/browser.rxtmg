@@ -1,16 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulegroupdoc
-rxversion="7.1">
-  <testsuiteentryhierarchy>
-    <flatlistofchildren>
-      <modulegroups
-      name="browser"
-      id="4ab1b1de-cf9c-4726-a5c4-65b27d7c2e2e"/>
-    </flatlistofchildren>
-    <childhierarchy>
-      <modulegroups
-      name="browser"
-      id="4ab1b1de-cf9c-4726-a5c4-65b27d7c2e2e"/>
-    </childhierarchy>
-  </testsuiteentryhierarchy>
+rxversion="7.2">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroups
+			id="4ab1b1de-cf9c-4726-a5c4-65b27d7c2e2e"
+			name="browser">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="4ab1b1de-cf9c-4726-a5c4-65b27d7c2e2e"
+			name="browser">
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
 </modulegroupdoc>

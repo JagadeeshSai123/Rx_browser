@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
-rxversion="7.1">
+rxversion="7.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testcase
@@ -19,8 +19,15 @@ rxversion="7.1">
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			showinvisiblechars="True">
 			</testsuite>
+			<testmodule
+			id="69fb3799-26eb-49cf-a383-a5c9ce4e6e96"
+			name="Recording2"
+			ref="15ef3081-9993-44af-8590-2776cd1ca8d1"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="744207d8-434d-40e7-b7dd-afeda41e420a"
 			name="Recording1"
@@ -50,6 +57,10 @@ rxversion="7.1">
 						id="744207d8-434d-40e7-b7dd-afeda41e420a"
 						name="Recording1">
 						</testmodule>
+						<testmodule
+						id="69fb3799-26eb-49cf-a383-a5c9ce4e6e96"
+						name="Recording2">
+						</testmodule>
 					</testcase>
 					<smartfoldernode
 					id="d9426838-1dd7-43ab-82a1-f25227a74f75"
@@ -74,5 +85,8 @@ rxversion="7.1">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

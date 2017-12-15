@@ -79,6 +79,35 @@ namespace browser
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Run mobile app 'ranorex.RxBrowser' on device 'USB-47f9c2e3'.", new RecordItemIndex(0));
+            Host.Local.RunMobileApp("USB-47f9c2e3", "ranorex.RxBrowser", false);
+            Delay.Milliseconds(3500);
+            
+            // Browse to site.
+            Report.Log(ReportLevel.Info, "Set Value", "Browse to site.\r\nSetting attribute PageUrl to 'www.google.com' on item 'Browser.Dom'.", repo.Browser.Dom.SelfInfo, new RecordItemIndex(1));
+            repo.Browser.Dom.Self.Element.SetAttributeValue("PageUrl", "www.google.com");
+            Delay.Milliseconds(5000);
+            
+            Report.Log(ReportLevel.Info, "Set Value", "Setting attribute Value to 'fhj' on item 'Browser.Dom.LstIb'.", repo.Browser.Dom.LstIbInfo, new RecordItemIndex(2));
+            repo.Browser.Dom.LstIb.Element.SetAttributeValue("Value", "fhj");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.Dom.Sbico' at Center", repo.Browser.Dom.SbicoInfo, new RecordItemIndex(3));
+            repo.Browser.Dom.Sbico.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Touch", "Touch item 'Browser.BtnBack' at Center", repo.Browser.BtnBackInfo, new RecordItemIndex(4));
+            repo.Browser.BtnBack.Touch();
+            Delay.Milliseconds(500);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key '{BACK}' press on 'Browser.RxBrowserActivity'.", repo.Browser.RxBrowserActivityInfo, new RecordItemIndex(5));
+            repo.Browser.RxBrowserActivity.PressKeys("{BACK}");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key '{BACK}' press on 'Browser.RxBrowserActivity'.", repo.Browser.RxBrowserActivityInfo, new RecordItemIndex(6));
+            repo.Browser.RxBrowserActivity.PressKeys("{BACK}");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

@@ -244,6 +244,77 @@ NbklKWYWxe0hNKcJ//vbH4nSlXq0/8fCrXsWLIg2bPV5s0rn947Z58FUEP4Gg5nfI5pwa7EAAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		capname="mobileapp"
+		id="9e9fa911-f121-4e34-8e3c-e9b97fed3210"
+		isrooted="True"
+		name="Browser"
+		searchtimeout="30000ms"
+		usecache="False">
+			<appfolder
+			capname="webdocument"
+			id="6c75ca40-87c8-4cc2-99e0-811b0ad2a211"
+			isrooted="True"
+			name="Dom"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,inputtag,webelement,mobileuielement"
+				capname="inputtag"
+				id="06e2235e-b763-4944-ba8f-f1f2f95b7aba"
+				name="LstIb"
+				refimgid="c8ea733a-277b-4c15-81f2-d47f13476a19"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@domain='www.google.co.in']//input[#'lst-ib']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//input[#'lst-ib']
+				</item>
+				<item
+				addcaps="unknown,divtag,webelement,mobileuielement"
+				capname="divtag"
+				id="44ad4d54-11e1-4505-b952-be88da1818ea"
+				name="EnterprisesDefineEnterprisesAtDict"
+				refimgid="131e1aa5-9cad-4b26-9209-18d51c5ead98"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@domain='www.google.co.in']//div[#'rso']/div[1]/div[@innertext='']/div[@innertext='']/div[@innertext='']/div[1]/div[@innertext='']/a[@innertext='']/div[@innertext='Enterprises | Define Enterprises at Dictionary.com']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'rso']/div[1]/div[@innertext='']/div[@innertext='']/div[@innertext='']/div[1]/?/?/a[@innertext='']/div[@innertext~'^Enterprises\ \|\ Define\ Ente']
+				</item>
+				<item
+				addcaps="unknown,divtag,webelement,mobileuielement"
+				capname="divtag"
+				id="eea0176a-d2b0-449c-ab03-5477a9e49048"
+				name="Sbico"
+				refimgid="617d2515-27d5-46a2-9fc9-8748722f2830"
+				refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/dom[@domain='www.google.co.in']//button[#'tsbb']/div[@innertext='']"
+				searchtimeout="30000ms">
+					/mobileapp[@title='ranorex.RxBrowser']//dom//button[#'tsbb']/div[@innertext='']
+				</item>
+				<basepath>
+					/mobileapp[@title='ranorex.RxBrowser']//dom
+				</basepath>
+			</appfolder>
+			<item
+			addcaps="form,mobileform,mobileuielement"
+			capname="form"
+			id="13516be9-36b8-4c3d-842a-546a0f5ae415"
+			name="RxBrowserActivity"
+			refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']
+			</item>
+			<item
+			addcaps="button,androidelement,mobileuielement"
+			capname="button"
+			id="e7cdee1d-3a62-45be-ba97-3ced3a09f114"
+			name="BtnBack"
+			refimgid="b04c489e-2d5f-4cf7-afa0-ec03f47d0335"
+			refpath="/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']/container[@rid='content']/container[@containertype='Linear']/container[@rid='Navigation']/button[@accessibilityid='Back']"
+			searchtimeout="30000ms">
+				/mobileapp[@title='ranorex.RxBrowser']/form[@title='RxBrowserActivity']//container[@rid='Navigation']/button[@accessibilityid='Back']
+			</item>
+			<basepath>
+				/mobileapp[@title='ranorex.RxBrowser']
+			</basepath>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
